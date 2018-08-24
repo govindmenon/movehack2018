@@ -173,7 +173,7 @@ a.bttn-dark:focus {
 
 }
 
-#home-dlp{
+#home-leader{
     background: #d00f34;
     min-height: 300px;
     color: white;
@@ -181,17 +181,17 @@ a.bttn-dark:focus {
     position: relative;
 }
 
-#home-dlp h1, #home-dlp p{
+#home-leader h1, #home-leader p{
   margin: auto;
 }
 
-#home-dlp-wrapper{
+#home-leader-wrapper{
   position: absolute;
     width: 100%;
     top: 40%;
 }
 
-#home-career-guide{
+#home-portal-guide{
   min-height: 300px;
     color: black;
     text-align: center;
@@ -282,6 +282,13 @@ a.bttn-dark:focus {
   width: 100%;
   padding: 80px;
   background-size: cover;
+}
+
+.portal-bg-img5{
+  background-image: url("./../images/AGV.jpg");
+  width: 100%;
+  padding: 80px;
+  background-size: cover; 
 }
 
 .portal_image{

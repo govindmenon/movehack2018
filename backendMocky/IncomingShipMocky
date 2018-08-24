@@ -1,0 +1,16 @@
+{
+    "shipNo": "JD4IU988",
+    "toCity": "Mumbai",
+    "toPort": "JNPT",
+    "anchorLoc": "18.938203lat, 72.897058lon",
+    "company":"AESM",
+    "typeOfGoods": "toys cotainers",
+    "isPerishable":"false",
+    "shipType":"bulky",
+    "incomingFreightCarrier":"Train",
+    "incomingFreightCarrierNo": "66342",
+    "minLaborReq": "250",
+    
+}
+
+ http://www.mocky.io/v2/5b8030103400007700dc07b1

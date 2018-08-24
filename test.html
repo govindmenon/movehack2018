@@ -1,0 +1,22 @@
+<html>
+<body>
+<div id="baxa" style="height: 100px;width: 500px;background: red">
+  
+</div>
+<script>
+let baxa = document.getElementById("baxa");
+let estimatedTime = new Date();
+estimatedTime.setSeconds(estimatedTime.getSeconds()+10);
+let berth = parseInt(Math.random()*100);
+setInterval(() => {
+	let date = new Date();
+  if(estimatedTime <= date){
+  	baxa.innerHTML ="Cool! Board towards Berth No "+berth;
+    baxa.style.background = "green";
+  }else{
+  	baxa.innerHTML = "Estimated Time: "+estimatedTime+"<br>"+date;
+  }
+},1000);
+</script>
+</body>
+</html>

@@ -226,18 +226,18 @@ a.bttn-dark:focus {
     flex-wrap: wrap;
 }
   
-.course-href:hover{
+.portal-href:hover{
     text-decoration: none; 
 
 }
 
-.course-href{  
+.portal-href{  
     display: inline;
     width: 380px;
     text-decoration: none;
 }
 
-.course-inner{
+.portal-inner{
     background-color: white;
     height: 300px;
     margin: 10px;
@@ -245,7 +245,7 @@ a.bttn-dark:focus {
     padding: 20px;
 }
 
-.course-inner:hover {
+.portal-inner:hover {
     box-shadow: 0px 0px 10px #24c9da6b;
     z-index: 2;
     -webkit-transition: all 200ms ease-in;
@@ -258,19 +258,33 @@ a.bttn-dark:focus {
     transform: scale(1.02);
 }
 
-.course-bg-img{
+.portal-bg-img{
   background-image: url("./../images/paperwork.jpg");
   width: 100%;
   padding: 80px;
 }
 
-.course-bg-img2{
+.portal-bg-img2{
   background-image: url("./../images/maproute.jpg");
   width: 100%;
   padding: 80px;
 }
 
-.course_image{
+.portal-bg-img3{
+  background-image: url("./../images/jnptWorkforce.jpg");
+  width: 100%;
+  padding: 80px;
+  background-size: cover;
+}
+
+.portal-bg-img4{
+  background-image: url("./../images/portBerth.jpg");
+  width: 100%;
+  padding: 80px;
+  background-size: cover;
+}
+
+.portal_image{
   background-image: url("./../static/images/course-icon.png");
   background-size: cover;
   width: 50px;

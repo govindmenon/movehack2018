@@ -5,8 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Berth Allocation and Time Management</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="/movehack2018/css/berth.css" rel="stylesheet"/>
 </head>
 <body>
-    
+    <div class="container">
+            <div class="row">
+                <div class="col-12"><h2>Search Ports</h2></div>
+                <div class="col-12">
+                    <div id="custom-search-input">
+                        <div class="input-group">
+                            <input type="text" class="search-query form-control" placeholder="Search" onkeyup="searchPorts()"/>
+                            <span class="input-group-btn">
+                                <button type="button" disabled>
+                                    <span class="fa fa-search"></span>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12" id="results">
+                    
+                </div>
+            </div>
+        </div>
 </body>
+<script>
+    let portsLinks = {
+                    'JNPT(Jawaharlal Nehru Port Trust)':'ports/jnpt.html',
+                    'Cochin Port':'ports/cochin.html'
+                };
+    let ports = ['JNPT(Jawaharlal Nehru Port Trust)','Cochin Port'];
+    function searchPorts(){
+        let searchText = event.target.value.toLowerCase();
+        let searchResults = ports.filter(port => {
+            if(searchText.trim().length > 0 && port.toLowerCase().indexOf(searchText) > -1){
+                return true;
+            }
+        });
+
+        document.getElementById('results').innerHTML = "";
+        searchResults.forEach(result => {
+            document.getElementById('results').innerHTML += `<div><a href="${portsLinks[result]}"><h2>${result}</h2></a></div>`;
+        });
+    }
+</script>
 </html>

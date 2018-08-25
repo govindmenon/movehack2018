@@ -260,32 +260,25 @@ a.bttn-dark:focus {
 
 .portal-bg-img{
   background-image: url("./../images/paperwork.jpg");
-  width: 100%;
-  padding: 80px;
 }
 
 .portal-bg-img2{
   background-image: url("./../images/maproute.jpg");
-  width: 100%;
-  padding: 80px;
 }
 
 .portal-bg-img3{
   background-image: url("./../images/jnptWorkforce.jpg");
-  width: 100%;
-  padding: 80px;
-  background-size: cover;
 }
 
 .portal-bg-img4{
   background-image: url("./../images/portBerth.jpg");
-  width: 100%;
-  padding: 80px;
-  background-size: cover;
 }
 
 .portal-bg-img5{
   background-image: url("./../images/AGV.jpg");
+}
+
+.portal-bg{
   width: 100%;
   padding: 80px;
   background-size: cover; 

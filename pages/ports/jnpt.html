@@ -8,6 +8,37 @@
 </head>
 <body>
     <div><h1>JNPT (Jawaharlal Nehru Port Trust)</h1></div>
-    <div class="mapouter"><div class="gmap_canvas"><iframe width="908" height="897" id="gmap_canvas" src="https://maps.google.com/maps?q=jnpt&t=19.0029537,72.8703044&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de">webseite erstellen lassen</a></div><style>.mapouter{text-align:right;height:897px;width:908px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:908px;}</style></div>
+    <div class="berth" style="height: 20px;width: 100px;border-radius: 15px;position: absolute;margin-left: 189px;margin-top:168px">
+        
+    </div>
+    <div class="berth" style="height: 20px;width: 100px;border-radius: 15px;position: absolute;margin-left: 200px;margin-top:140px">
+        
+    </div>
+    <div class="berth" style="height: 20px;width: 100px;border-radius: 15px;position: absolute;margin-left: 260px;margin-top:70px">
+        
+    </div>
+    <div class="berth" style="height: 20px;width: 100px;border-radius: 15px;position: absolute;margin-left: 280px;margin-top:50px">
+        
+    </div>
+    <div class="berth" style="height: 20px;width: 100px;border-radius: 15px;position: absolute;margin-left: 290px;margin-top:27px">
+        
+    </div>
+    <div class="mapouter"><div class="gmap_canvas"><iframe width="908" height="897" id="gmap_canvas" src="https://maps.google.com/maps?q=jnpt&t=19.0029537,72.8703044&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de">webseite erstellen lassen</a></div><style>.mapouter{text-align:right;height:500px;width:908px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:908px;}</style></div>
 </body>
+<script>
+    document.getElementById("gmap_canvas").onload = function(){
+        let occupancy = [parseInt(Math.random()*100),parseInt(Math.random()*100),parseInt(Math.random()*100),parseInt(Math.random()*100),parseInt(Math.random()*100)];
+        let berthLength = document.getElementsByClassName("berth");
+        for(let i=0;i<berthLength.length;i++){
+            berthLength[i].innerHTML = `${occupancy[i]}% occupied`;
+            if(occupancy[i] < 60){
+                berthLength[i].style.background = "green";
+            }else if(occupancy[i] < 80){
+                berthLength[i].style.background = "yellow";
+            }else{
+                berthLength[i].style.background = "red";
+            }
+        }
+    }
+</script>
 </html>

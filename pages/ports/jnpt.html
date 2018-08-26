@@ -63,33 +63,6 @@
     </div>
   </div>
 
-  <div class="modal" id="myModal2">
-    <div class="modal-dialog">
-      <div class="modal-content">
-      
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">Berth Details</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        
-        <!-- Modal body -->
-        <div class="modal-body">
-            <div>Berth No: <span id="berthNo"></span></div>
-            <div>Labours Available: <span id="laborsAvailable"></span></div>
-            <div>Cranes Available: <span id="cranesAvailable"></span></div>
-            <div>Max Berthing Time: <span id="maxBerthingTime"></span></div>
-        </div>
-        
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-
   <div style="margin-top: 50px;text-align: center;">
       <button class="btn btn-primary" onclick="showLoadingGif()">Assign Berth</button>
   </div>
@@ -122,17 +95,10 @@
 
     function showLoadingGif(){
         $("#loading").show();
-        $.ajax({
-            url: "http://www.mocky.io/v2/5b82988b3300007a00959474?mocky-delay=2000ms",
-            success: function(json){
-                        document.getElementById("berthNo").innerHTML = json.berthNo;
-                        document.getElementById("laborsAvailable").innerHTML = json.laborsAvailable;
-                        document.getElementById("cranesAvailable").innerHTML = json.cranesAvalable;
-                        document.getElementById("maxBerthingTime").innerHTML = json.maxBerthingTime;
-                        $("#myModal2").modal();
-                        $("#loading").hide();
-                    }
-        })
+        setTimeout(() => {
+            $("#loading").hide();
+            window.location.href = '/movehack2018/pages/ports/assignberth.html';
+        },2000);
     }
 </script>
 </html>

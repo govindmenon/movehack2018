@@ -160,7 +160,7 @@ a.bttn-dark:focus {
 
 
 .home-parallax {
-    background-image: url("./../images/idea.jpg");
+    background-image: url("./../images/harbour2.jpeg");
     min-height: 300px; 
     background-attachment: fixed;
     background-position: center;
@@ -214,6 +214,7 @@ a.bttn-dark:focus {
   padding: 10px;
   background-color: white;
   height: 800px;
+  padding-top: 60px;
 }
 
 #home-portals{
@@ -293,7 +294,7 @@ a.bttn-dark:focus {
 
 
 .TBD{
-  height: 600px;
+  height: 300px;
   background: white;
 }
 
@@ -340,3 +341,8 @@ a.bttn-dark:focus {
 .container-fluid{
   padding: 0;
 }
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover{
+  background-color: #75757530
+}
+

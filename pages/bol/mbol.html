@@ -9,10 +9,10 @@
 </head>
 <body>
 
-	<div class="bol-msg container" style="background: aliceblue;">
+	<div class="bol-msg container" style="background: #311f1f14;">
 		<h1 class="bol-inside">Reduce the Burden of paperworks % official procedures at one single portal.</h1>
 	</div>
-	<div class="container bol-cont">
+	<div class="container bol-cont" style="background: #311f1f14;">
 		<div class="row">
 	        <form action="billing" method="post" class="form-horizontal" id="billingform" accept-charset="utf-8">
 		        <div class="span6" style="padding-top: 50px;">
@@ -44,9 +44,9 @@
 
 		    			<div class="control-group">
 		    				<label for="Shipper" class="control-label">	
-		    					Shipper
+		    					Place of Recipt
 		    				</label>
-		    				<div class="controls"><input name="shipper" type="text" value="" id="shipper">
+		    				<div class="controls"><input name="placeofRecipt" type="text" value="" id="placeofRecipt">
 		    				</div>
 		    			</div>
 		     
@@ -75,7 +75,7 @@
 		    			</div>
 		     
 		    			<div class="control-group">
-		    				<label for="city" class="control-label">	
+		    				<label for="city" class="control-label">
 		    					City
 		    				</label>
 		    				<div class="controls"><input name="city" type="text" value="" id="city">
@@ -135,10 +135,18 @@
 	    			</div>
 
 	    			<div class="control-group">
-	    				<label for="Shipper" class="control-label">	
-	    					Shipping ID
+	    				<label for="company" class="control-label">	
+	    					Port of Unloading
 	    				</label>
-	    				<div class="controls"><input name="shipper" type="text" value="" id="shipper">
+	    				<div class="controls">
+	    					<input name="unloading" type="text" value="" id="unloading">
+	    				</div>
+	    			</div>
+	    			<div class="control-group">
+	    				<label for="Shipper" class="control-label">	
+	    					Place of Delivery
+	    				</label>
+	    				<div class="controls"><input name="pod" type="text" value="" id="pod">
 	    				</div>
 	    			</div>
 	     
@@ -186,7 +194,7 @@
     		</form>
 		</div>
 	</div>
-	<table id="carrier" style="background: aliceblue;>
+	<table id="carrier" style="background: #311f1f14;>
 		<thead>
 			<tr>
 				<td class="blank" colspan="2"> </td>

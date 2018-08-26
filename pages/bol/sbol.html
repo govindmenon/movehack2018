@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shipped bill of lading</title>
+	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/movehack2018/css/bol.css">
+</head>
+<body>
+	<div class="container bol-cont">
+		<div class="row">
+	        <div class="span12">
+	    		<form action="billing" method="post" class="form-horizontal" id="billingform" accept-charset="utf-8">
+	    			
+	    			<div class="control-group">
+	    				<label for="bolnumber" class="control-label">	
+	    					BOL Number
+	    				</label>
+	    				<div class="controls"><input name="bolnumber" type="text" value="" id="bolnumber">
+	    				</div>
+	    			</div>
+
+	    			<div class="control-group">
+	    				<label for="email" class="control-label">	
+	    					Shiper E-Mail 
+	    				</label>
+	    				<div class="controls">
+	    					<input name="email" type="email" value="" id="email">
+	    				</div>
+	    			</div>
+
+	    			<div class="control-group">
+	    				<label for="company" class="control-label">	
+	    					Shiper Company 
+	    				</label>
+	    				<div class="controls">
+	    					<input name="company" type="text" value="" id="company">
+	    				</div>
+	    			</div>
+
+	    			<div class="control-group">
+	    				<label for="Shipper" class="control-label">	
+	    					Shipper
+	    				</label>
+	    				<div class="controls"><input name="shipper" type="text" value="" id="shipper">
+	    				</div>
+	    			</div>
+	     
+	    			<div class="control-group">
+	    				<label for="address" class="control-label">	
+	    					Address of Shipper
+	    				</label>
+	    				<div class="controls"><input name="address" placeholder="W 123 Street" type="text" value="" id="address"><span class="help-inline">  Street Name and/or apartment number</span>
+	    				</div>
+	    			</div>
+
+	    			<div class="control-group">
+	    				<label for="date" class="control-label">	
+	    					Date
+	    				</label>
+	    				<div class="controls"><input name="date" placeholder="dd/mm/yy" type="text" value="" id="date">
+	    				</div>
+	    			</div>
+	     
+	    			<div class="control-group">
+	    				<label for="zip" class="control-label">	
+	    					Zip Code
+	    				</label>
+	    				<div class="controls"><input name="zip" type="text" value="" id="zip">
+	    				</div>
+	    			</div>
+	     
+	    			<div class="control-group">
+	    				<label for="city" class="control-label">	
+	    					City
+	    				</label>
+	    				<div class="controls"><input name="city" type="text" value="" id="city">
+	    				</div>
+	    			</div>
+	    			
+	    			<div class="control-group">
+	    				<label for="country" class="control-label">	
+	    					Country
+	    				</label>
+	    				<div class="controls">
+	    					<select name="country" id="country">
+	    						<option value="AE">United Arab Emirates</option>
+	    						<option value="GB">United Kingdom</option>
+	    						<option value="US">USA</option>
+	    						<option value="UZ">Uzbekistan</option>
+	    						<option value="VN">Vietnam</option>
+	    					</select>
+	    				</div>
+	    			</div>
+	     			
+		    		<div class="control-group">
+	    				<label for="carrierName" class="control-label">	
+	    					Carrier Name 
+	    				</label>
+	    				<div class="controls">
+	    					<input name="carrierName" type="text" value="" id="carrierName">
+	    				</div>
+	    			</div>
+
+	    			<div class="form-actions">
+	    				<button type="submit" class="btn btn-large btn-primary">Save Billing Address</button>
+	    			</div>
+	    		</form>
+	    	</div> <!-- .span8 -->
+		</div>
+	</div>
+</body>
+</html>

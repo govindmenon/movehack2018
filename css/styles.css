@@ -209,12 +209,20 @@ a.bttn-dark:focus {
   text-align: center;
 }
 
-#portal-wrapper{
+#portal-wrapper2{
   width: 100%;
   padding: 10px;
   background-color: white;
   height: 800px;
   padding-top: 60px;
+}
+
+#portal-wrapper2{
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  height: 800px;
+  padding-top: 20px;
 }
 
 #home-portals{
@@ -285,7 +293,7 @@ a.bttn-dark:focus {
   background-size: cover; 
 }
 
-.portal_image{
+. {
   background-image: url("./../static/images/course-icon.png");
   background-size: cover;
   width: 50px;
@@ -296,6 +304,13 @@ a.bttn-dark:focus {
 .TBD{
   height: 250px;
   background: white;
+}
+
+.TBD1{  
+  text-align: center;
+  height: 200px;
+  padding-top: 55px;
+  margin-bottom: 0px;
 }
 
 .footer-pane{
@@ -346,3 +361,46 @@ a.bttn-dark:focus {
   background-color: #75757530
 }
 
+
+
+.test {
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+    animation: fadein 5s;
+    -moz-animation: fadein 5s;
+    -webkit-animation: fadein 5s; 
+    -o-animation: fadein 5s; 
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}

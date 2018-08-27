@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="images">
-        <img id="image" src="/movehack2018/images/waterways.jpg"/>
+        <img id="image" src="/movehack2018/images/waterways.JPG"/>
     </div>
     <div class="buttons">
         <button id="water" class="btn btn-success">Waterways(Optimal Route)</button>
@@ -22,13 +22,13 @@
 </body>
 <script>
     $(".btn").on("click",() => {
-        var src = "/movehack2018/images/waterways.jpg";
+        var src = "/movehack2018/images/waterways.JPG";
         if(event.target.id == 'air'){
-            src = "/movehack2018/images/airways.jpg";
+            src = "/movehack2018/images/airways.JPG";
         }
 
         if(event.target.id == 'road'){
-            src = "/movehack2018/images/road.jpg";
+            src = "/movehack2018/images/road.JPG";
         }
 
         document.getElementById("image").src = src;

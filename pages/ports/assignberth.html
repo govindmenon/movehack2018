@@ -11,7 +11,33 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </head>
 <body onload="showLoadingGif()">
-    <div>
+<style type="text/css">
+.jumbotron{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 9%;
+}
+.out{
+    width: 40%;
+    background: white;
+    border-radius: 5px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+#timerBox{
+    width: 40%;
+    background: white;
+    border-radius: 5px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    margin-top: 35px;
+}
+</style>
+    <div><h1 style="text-align: center;padding-top: 20px;">JNPT (Jawaharlal Nehru Port Trust)</h1></div>
+<div class="outTim jumbotron">
+    <div class="out">
         <div>Berth No: <span id="berthNo">N.A</span></div>
         <div>Labours Available: <span id="laborsAvailable">N.A</span></div>
         <div>Cranes Available: <span id="cranesAvailable">N.A</span></div>
@@ -20,6 +46,7 @@
     <div id="timerBox" style="height: 100px;width: 500px;background: red">
   
     </div>
+</div>
 <script>
     function showLoadingGif(){
         $.ajax({

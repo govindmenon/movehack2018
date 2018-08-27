@@ -9,15 +9,65 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 <body>
-    <div class="images">
-        <img id="image" src="/movehack2018/images/waterways.JPG"/>
-    </div>
-    <div class="buttons">
-        <button id="water" class="btn btn-success">Waterways(Optimal Route)</button>
-        <button id="air" class="btn btn-primary">Airways</button>
-        <button id="road" class="btn btn-primary">Railway</button>
+    <style type="text/css">
+        .images{
+            width: 50%;
+            margin: 0;
+            padding-top: 35px;
+        }
+        #image{
+            border-radius: 5px;
+        }
+        .jumbotron{
+            width: 90%;
+            margin: 0 auto;
+        }
+        .routes{
+            width: 45%;
+            height: 240px;
+            margin-top: 35px;
+            background-color: white;
+            border-radius: 9px;
+        }
+        .imgRoutes{
+            display: flex;
+        }
+        .btn{
+            margin-left: 10px;
+            margin-top: 10px;
+          width:50%;
+          position:relative;
+          height:40px;
+          margin-bottom: 5px;
+        }
+
+        .icon{
+          font-size: 22px;
+        }
+
+
+
+    </style>
+    <div class="jumbotron">
+        <h3 style="text-align: center;">Find the optimal route</h3>
+        <div class="imgRoutes">
+            <div class="images">
+                <img id="image" src="/movehack2018/images/waterways.JPG"/>
+            </div>
+            <div class="routes">
+                <button class="btn btn-success">
+                    <i class="fa fa-ship icon" aria-hidden="true"></i> + &nbsp
+                    <i class="fa fa-swimming-pool icon" aria-hidden="true"></i> + &nbsp
+                    <i class="fa fa-truck icon" aria-hidden="true"></i> 
+                </button>&nbsp&nbspCoastal Shipping + NW + Road
+                <button class="btn btn-primary" id="road"><i class="fa fa-truck icon" aria-hidden="true"></i></button>Roadways.
+                <button class="btn btn-primary" id="air"><i class="fa fa-plane icon" aria-hidden="true"></i></button>&nbsp&nbspAirways
+                <button class="btn btn-primary" id="road"><i class="fa fa-train icon" aria-hidden="true"></i></button>&nbsp&nbspFreight Train
+            </div>
+        </div>
     </div>
 </body>
 <script>

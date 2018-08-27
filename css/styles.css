@@ -209,12 +209,20 @@ a.bttn-dark:focus {
   text-align: center;
 }
 
-#portal-wrapper{
+#portal-wrapper2{
   width: 100%;
   padding: 10px;
   background-color: white;
   height: 800px;
   padding-top: 60px;
+}
+
+#portal-wrapper2{
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  height: 800px;
+  padding-top: 20px;
 }
 
 #home-portals{
@@ -285,7 +293,7 @@ a.bttn-dark:focus {
   background-size: cover; 
 }
 
-.portal_image{
+. {
   background-image: url("./../static/images/course-icon.png");
   background-size: cover;
   width: 50px;

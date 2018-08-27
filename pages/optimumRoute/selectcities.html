@@ -9,25 +9,36 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link href="/movehack2018/css/berth.css" rel="stylesheet"/>
 </head>
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-12"><h2>Search Ports</h2></div>
+            <div class="col-12"><h2>Select Cities</h2></div>
             <div class="col-12">
                 <div id="custom-search-input">
                     <div class="input-group">
-                        <input type="text" class="search-query form-control" style="    border-radius: 15px;" placeholder="Search" onkeyup="searchPorts()"/>
-                        <span class="input-group-btn">
-                            <button type="button" disabled>
-                                <span class="fa fa-search"></span>
-                            </button>
-                        </span>
+                        From: <select class="search-query form-control" style="border-radius: 15px;">
+                            <option>---Select City---</option>
+                            <option>Indore</option>
+                            <option>Mumbai</option>
+                        </select>
                     </div>
                 </div>
             </div>
-            <div class="col-12" id="results">
-                
+            <div class="col-12">
+                <div id="custom-search-input">
+                    <div class="input-group">
+                        To: <select class="search-query form-control" style="border-radius: 15px;">
+                            <option>---Select City---</option>
+                            <option>Indore</option>
+                            <option>Mumbai</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12" style="margin-top: 50px">
+                <button class="btn btn-primary" onclick="window.location.href = '/movehack2018/pages/optimumRoute/map.html'">Find Optimum Route</button>
             </div>
         </div>
     </div>

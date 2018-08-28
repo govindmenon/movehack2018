@@ -26,7 +26,7 @@
             margin: 0 auto;
         }
         .routes{
-            width: 45%;
+            width: 75%;
             height: 240px;
             margin-top: 35px;
             background-color: white;
@@ -57,30 +57,53 @@
             <div class="images">
                 <img id="image" src="/movehack2018/images/waterways.JPG"/>
             </div>
-            <div class="routes">
-                <button class="btn btn-success">
-                    <i class="fa fa-ship icon" aria-hidden="true"></i> + &nbsp
-                    <i class="fa fa-swimming-pool icon" aria-hidden="true"></i> + &nbsp
-                    <i class="fa fa-truck icon" aria-hidden="true"></i> 
-                </button>&nbsp&nbspCoastal Shipping + NW + Road
-                <button class="btn btn-primary" id="road"><i class="fa fa-truck icon" aria-hidden="true"></i></button>&nbsp&nbsp Roadways.
-                <button class="btn btn-primary" id="air"><i class="fa fa-plane icon" aria-hidden="true"></i></button>&nbsp&nbspAirways
-                <button class="btn btn-primary" id="road"><i class="fa fa-train icon" aria-hidden="true"></i></button>&nbsp&nbspFreight Train
+            <div>
+                <div class="routes">
+                    <button class="btn btn-success" id="coastal">
+                        <i class="fa fa-ship icon" aria-hidden="true"></i> + &nbsp
+                        <i class="fa fa-swimming-pool icon" aria-hidden="true"></i> + &nbsp
+                        <i class="fa fa-truck icon" aria-hidden="true"></i> 
+                    </button>&nbsp&nbspCoastal Shipping + NW + Road
+                    <button class="btn btn-primary" id="road"><i class="fa fa-truck icon" aria-hidden="true"></i></button>&nbsp&nbsp Roadways.
+                    <button class="btn btn-primary" id="air"><i class="fa fa-plane icon" aria-hidden="true"></i></button>&nbsp&nbspAirways
+                    <button class="btn btn-primary" id="road"><i class="fa fa-train icon" aria-hidden="true"></i></button>&nbsp&nbspFreight Train
+                </div>
+                <div class="routes">
+                    Total Distance: <span id="totalDistance">650 km</span><br/>
+                    Time Required: <span id="timeRequired">11hr 44min</span><br/>
+                    Effective Cost: <span id="effectiveCost">₹916 /kg</span>&nbsp&nbsp<i class="fas fa-question-circle" data-toggle="tooltip" data-placement="right" title="Calculated as (effective cost for 1kg for 1km * total distance in km)"></i><br/>
+                </div>
             </div>
         </div>
     </div>
 </body>
 <script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();   
+    });
+
     $(".btn").on("click",() => {
         var src = "/movehack2018/images/waterways.JPG";
         if(event.target.id == 'air'){
             src = "/movehack2018/images/airways.JPG";
+            document.getElementById("totalDistance").innerHTML = "552 km";
+            document.getElementById("timeRequired").innerHTML = "1hr 10mins";
+            document.getElementById("effectiveCost").innerHTML = "₹5520 /kg";
         }
 
         if(event.target.id == 'road'){
             src = "/movehack2018/images/road.JPG";
+            document.getElementById("totalDistance").innerHTML = "583 km";
+            document.getElementById("timeRequired").innerHTML = "10hr 23mins";
+            document.getElementById("effectiveCost").innerHTML = "₹1329.24 /kg";
         }
 
+        if(event.target.id == 'coastal'){
+            document.getElementById("totalDistance").innerHTML = "650 km";
+            document.getElementById("timeRequired").innerHTML = "11hr 44min";
+            document.getElementById("effectiveCost").innerHTML = "₹916 /kg";
+        }
+        
         document.getElementById("image").src = src;
     });
 </script>

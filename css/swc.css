@@ -8,3 +8,23 @@
 	line-height: 290px;
 	font-size: medium; 
 }
+
+.portal-bg-img{
+  background-image: url("./../images/bolform.jpg");
+}
+
+.portal-bg-img2{
+  background-image: url("./../images/paperform.jpeg");
+}
+
+.portal-bg-img3{
+  background-image: url("./../images/paperform2.jpeg");
+}
+
+.portal-bg-img4{
+  background-image: url("./../images/study.jpg");
+}
+
+.portal-bg-img5{
+  background-image: url("./../images/paperwork.jpg");
+}

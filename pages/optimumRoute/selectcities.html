@@ -18,10 +18,10 @@
             <div class="col-12">
                 <div id="custom-search-input">
                     <div class="input-group">
-                        From: <select class="search-query form-control" style="border-radius: 15px;" required>
+                        From: <select id="from" class="search-query form-control" style="border-radius: 15px;" required>
                                 <option value="">---Select City---</option>
-                                <option value="Indore">Indore</option>
-                                <option value="Mumbai">Mumbai</option>
+                                <option value="1">Indore</option>
+                                <option value="2">Mumbai</option>
                             </select>
                     </div>
                 </div>
@@ -29,18 +29,33 @@
             <div class="col-12">
                 <div id="custom-search-input">
                     <div class="input-group">
-                        To: <select class="search-query form-control" style="border-radius: 15px;">
+                        To: <select id="to" class="search-query form-control" style="border-radius: 15px;">
                             <option>---Select City---</option>
-                            <option>Indore</option>
-                            <option>Mumbai</option>
+                            <option value="1">Indore</option>
+                            <option value="2">Mumbai</option>
                         </select>
                     </div>
                 </div>
             </div>
             <div class="col-12" style="margin-top: 50px">
-                <button class="btn btn-primary" onclick="window.location.href = '/movehack2018/pages/optimumRoute/map.html'">Find Optimum Route</button>
+                <button class="btn btn-primary" onclick="submit()">Find Optimum Route</button>
             </div>
         </div>
     </div>
 </body>
+<script>
+
+    function submit(){
+        if(document.getElementById("from").value != "2"){
+            alert("Please select Mumbai as From city");
+            return;
+        }
+
+        if(document.getElementById("to").value != "1"){
+            alert("Please select Indore as To city");
+            return;
+        }
+        window.location.href = '/movehack2018/pages/optimumRoute/map.html';
+    }
+</script>
 </html>

@@ -209,7 +209,7 @@ a.bttn-dark:focus {
   text-align: center;
 }
 
-#portal-wrapper2{
+#portal-wrapper{
   width: 100%;
   padding: 10px;
   background-color: white;
@@ -292,14 +292,6 @@ a.bttn-dark:focus {
   padding: 80px;
   background-size: cover; 
 }
-
-. {
-  background-image: url("./../static/images/course-icon.png");
-  background-size: cover;
-  width: 50px;
-  height: 50px;
-}
-
 
 .TBD{
   height: 250px;

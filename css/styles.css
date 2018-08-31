@@ -28,6 +28,10 @@ body {
   color: red;
 }
 
+.carousel-caption {
+  background-color: #39393a1a;
+}
+
 .flex {
   align-items: center;
   justify-content: center;
